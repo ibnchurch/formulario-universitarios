@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universitários IBNC</title>
+    <link rel="stylesheet" href="\css\styles.css"/>
+    <script src="\js\scripts.js" defer></script>
+</head>
+<body>
+    <h1>Universitários IBNC</h1>
+    <p>"E não sede conformados com este mundo, mas sede transformados pela renovação do vosso entendimento, 
+        para que experimenteis qual seja a boa, agradável, e perfeita vontade de Deus". 
+
+        Romanos 12:2</p>
+    <form id="form" action="https://api.sheetmonkey.io/form/3Vj2P8TgszsrpPWEz5Z3P" method="post">
+        <label for="fullName">Nome Completo:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="age">Idade:</label>
+        <input type="number" id="age" name="age" min="0" required>
+        
+        <label for="phone">Celular (WhatsApp):</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]" placeholder="Digite apenas números" required>
+        
+        <label for="university">Onde faz faculdade?</label>
+        <input type="text" id="university" name="university" required>
+        
+        <label for="course">Qual seu curso?</label>
+        <input type="text" id="course" name="course" required>
+        
+        <label for="church">É membro de qual igreja?</label>
+        <input type="text" id="church" name="church" required>
+
+        <label for="expectations">O que você deseja ouvir em nossos encontros?</label>
+        <textarea name="expectations" id="expectations" cols="30" rows="4"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
