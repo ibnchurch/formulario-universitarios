@@ -8,12 +8,12 @@ body::before {
     content: "";
     display: block;
     background-color: #181414;
-    height: 45px; /* Ajuste a altura conforme necessário */
+    height: 45px;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1; /* Certifica-se de que a faixa preta esteja acima do conteúdo */
+    z-index: 1;
 }
 
 h1 {
