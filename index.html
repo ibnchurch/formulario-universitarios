@@ -8,9 +8,10 @@
     <script src="\js\scripts.js" defer></script>
 </head>
 <body>
+    <header class="black-header"></header>
     <h1>Universitários IBNC</h1>
-    <p>"E não sede conformados com este mundo, mas sede transformados pela renovação do vosso entendimento,<br>
-        para que experimenteis qual seja a boa, agradável, e perfeita vontade de Deus". 
+    <p>"Não se amoldem ao padrão deste mundo, mas transformem-se pela renovação da sua mente,<br> 
+        para que sejam capazes de experimentar e comprovar a boa, agradável e perfeita vontade de Deus.". 
 
         <br>Romanos 12:2</p>
     <form id="form" action="https://api.sheetmonkey.io/form/3Vj2P8TgszsrpPWEz5Z3P" method="post">
@@ -21,8 +22,8 @@
         <input type="number" id="age" name="age" min="0" required>
         
         <label for="phone">Celular (WhatsApp):</label>
-        <input type="text" id="phone" name="phone" placeholder="Digite apenas números" required>
-        
+        <input type="text" id="phone" name="phone" placeholder="(xx) xxxxx-xxxx" pattern="\(\d{2}\) \d{5}-\d{4}" required>
+              
         <label for="university">Onde faz faculdade?</label>
         <input type="text" id="university" name="university" required>
         
@@ -37,5 +38,11 @@
 
         <button type="submit">Enviar</button>
     </form>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script>  $('#phone').mask('(00) 00000-0000');
+    </script>
+
 </body>
 </html>

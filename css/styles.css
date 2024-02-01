@@ -4,12 +4,24 @@
     
 }
 
-body {
-    padding: 1rem;
+body::before {
+    content: "";
+    display: block;
+    background-color: black;
+    height: 45px; /* Ajuste a altura conforme necessário */
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Certifica-se de que a faixa preta esteja acima do conteúdo */
 }
 
 h1 {
     text-align: center;
+}
+
+body {
+    margin: 70px
 }
 
 form {
