@@ -1,13 +1,13 @@
 * {
     font-family: Helvetica;
     box-sizing: border-box;
-    
+    color:#181414;
 }
 
 body::before {
     content: "";
     display: block;
-    background-color: black;
+    background-color: #181414;
     height: 45px; /* Ajuste a altura conforme necessário */
     width: 100%;
     position: absolute;
