@@ -16,19 +16,46 @@ body::before {
     z-index: 1;
 }
 
-h1 {
-    text-align: center;
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 90%;
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form {
+    display: flex;
+    align-items: flex-start;
+}
+
+form label {
+    margin-top: 8px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 body {
-    margin: 70px
+    margin: 70px;
 }
 
 form {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    width: 500px;
+    width: 650px;
     margin: 0 auto
 }
 
@@ -37,13 +64,14 @@ label {
     margin-bottom: 5px;
 }
 
-p {
-    font-family: Helvetica;
-    color:#888888;
-    text-align: center;
-    margin-bottom: 20px;
-    font-style: italic;
+h1 {
+    width: 650px;
+}
 
+p {
+    color:#888888;
+    text-align: start;
+    width: 650px;
 }
 
 input, select, textarea{
