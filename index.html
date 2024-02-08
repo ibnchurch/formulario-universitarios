@@ -3,100 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criatividade IBNC</title>
+    <title>Universitários IBNC</title>
     <link rel="stylesheet" href="\css\styles.css"/>
     <script src="\js\scripts.js" defer></script>
 </head>
-
 <body>
-    <div class="container">
-    <div class="content">
-        <div class="h1">
-            <h1>Quero fazer parte do time IBNC CRIATIVIDADE!</h1>
-        </div>
-        <p>Uhul! Que bom que você chegou até aqui! Vamos amar ter você no time!
-        O objetivo desse formulário é antes de mais nada, abrir as portas pra você ir ao nível mais importante da jornada cristã: 
-        <b>SERVIR</b>, isto é, ajudar a igreja acontecer de forma prática. Para que isso aconteça, esse formulário vai te conectar com o líder específico
-        de cada área de serviço da área criativa e dessa forma encontrar o melhor time para servir, além de garantir que você entenda
-        como funciona o processo de entrada do seu time de interesse.
-        </p>
-        <p>
-        Cada time tem o seu processo de entrada, o time de "Louvor", por exemplo, depende das audições para o seu processo, e tudo isso será alinhado entre você e o líder do ministério em questão.
-        De qualquer maneira, fazemos questão que você sirva, não importa o time que você faça parte.
-        Mateus 20:28 “tal como o Filho do Homem, que não veio para ser servido, mas para servir e dar a sua vida em resgate por muitos.”
-        Obs: Se você está aqui e está interessado no processo de entrada e audições para o time de <i>LOUVOR</i>, 
-        as audições estão ABERTAS, e você deve clicar <a href="">AQUI</a> para participar.
-        </p>
-        <p>
-        Deus abençoe, IBNC - CRIATIVIDADE</p>
-        
-        <form id="form" action="https://api.sheetmonkey.io/form/9knPeZcDxUbxJz1os3Nmxw" method="post">
-            
-            <label for="email">  Seu melhor E-mail:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="fullName">  Nome Completo:</label>
-            <input type="text" id="fullName" name="fullName" required>
-            
-            <label for="phone">  Celular (WhatsApp):</label>
-            <input type="text" id="phone" name="phone" placeholder="(xx) xxxxx-xxxx" pattern="\(\d{2}\) \d{5}-\d{4}" required>
-            
-            <label for="socialMedia">Redes Sociais (Instagram, Facebook) insira seu nome de perfil:</label>
-            <input type="text" id="socialMedia" name="socialMedia" required>
-            
-            <label for="timeInteresse">1º Time de interesse:</label>
-            <select id="timeInteresse" name="timeInteresse" default="Selecione" required>
-                <option value="Comunicacao">Comunicação</option>
-                <option value="Projeção">Projeção</option>
-                <option value="Danca">Dança</option>
-                <option value="Louvor">Louvor</option>
-                <option value="Audio">Áudio</option>
-                <option value="Iluminacao">Iluminação</option>
-                <option value="Transmissao">Transmissão</option>
-                <option value="JoyBigBandOrchestra">Joy Big Band Orchestra</option>
-                <option value="Tecnologia">Tecnologia</option>
-                <option value="Outros">Outros</option>
-            </select>
-            
-            <label for="timeInteresse2">2º Time de interesse:</label>
-            <select id="timeInteresse2" name="timeInteresse2" required>
-                <option value="Comunicacao">Comunicação</option>
-                <option value="Projeção">Projeção</option>
-                <option value="Danca">Dança</option>
-                <option value="Louvor">Louvor</option>
-                <option value="Audio">Áudio</option>
-                <option value="Iluminacao">Iluminação</option>
-                <option value="Transmissao">Transmissão</option>
-                <option value="JoyBigBandOrchestra">Joy Big Band Orchestra</option>
-                <option value="Tecnologia">Tecnologia</option>
-                <option value="Outros">Outros</option>
-            </select>
-            
-            <label for="timeInteresse3">3º Time de interesse:</label>
-            <select id="timeInteresse3" name="timeInteresse3" required>
-                <option value="Comunicacao">Comunicação</option>
-                <option value="Projeção">Projeção</option>
-                <option value="Danca">Dança</option>
-                <option value="Louvor">Louvor</option>
-                <option value="Audio">Áudio</option>
-                <option value="Iluminacao">Iluminação</option>
-                <option value="Transmissao">Transmissão</option>
-                <option value="JoyBigBandOrchestra">Joy Big Band Orchestra</option>
-                <option value="Tecnologia">Tecnologia</option>
-                <option value="Outros">Outros</option>
-            </select>
-            
-            <label for="outrosCampo">Se "Outros", especifique:</label>
-            <input type="text" id="outrosCampo" name="outrosCampo">
-            
-            <button class="submit" type="submit">Enviar</button>
-            </div>
-    </form>
-</div>
+    <header class="black-header"></header>
+    <h1>Universitários IBNC</h1>
+    <p>"Não se amoldem ao padrão deste mundo, mas transformem-se pela renovação da sua mente,<br> 
+        para que sejam capazes de experimentar e comprovar a boa, agradável e perfeita vontade de Deus."
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
-<script>  $('#phone').mask('(00) 00000-0000');
+        <br>Romanos 12:2</p>
+    <form id="form" action="https://api.sheetmonkey.io/form/3Vj2P8TgszsrpPWEz5Z3P" method="post">
+        <label for="fullName">Nome Completo:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="age">Idade:</label>
+        <input type="number" id="age" name="age" min="0" required>
+        
+        <label for="phone">Celular (WhatsApp):</label>
+        <input type="text" id="phone" name="phone" placeholder="(xx) xxxxx-xxxx" pattern="\(\d{2}\) \d{5}-\d{4}" required>
+              
+        <label for="university">Onde faz faculdade?</label>
+        <input type="text" id="university" name="university" required>
+        
+        <label for="course">Qual seu curso?</label>
+        <input type="text" id="course" name="course" required>
+        
+        <label for="church">É membro de qual igreja?</label>
+        <input type="text" id="church" name="church" required>
+
+        <label for="expectations">O que você deseja ouvir em nossos encontros?</label>
+        <textarea name="expectations" id="expectations" cols="30" rows="4"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script>  $('#phone').mask('(00) 00000-0000');
     </script>
 
 </body>
