@@ -1,35 +1,56 @@
 * {
-    font-family: Helvetica;
+    font-family: "Montserrat", sans-serif;;
     box-sizing: border-box;
     color:#181414;
+    margin: 0;
 }
 
-body::before {
-    content: "";
-    display: block;
-    background-color: #181414;
-    height: 45px;
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
 }
 
-h1 {
-    text-align: center;
+.content {
+    width: 90%;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-body {
-    margin: 70px
+.img {
+    display: flex;
+    justify-content: center;
+    width: 90%; /* Defina a largura desejada para a div */
+    max-width: 650px;
+    height: 100%; /* Defina a altura desejada para a div */
+    max-height: 500px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: #888888;
+}
+
+.img img {
+    width: 100%; /* Faça a imagem ocupar 100% da largura da div */
+    height: 100%; /* Faça a imagem ocupar 100% da altura da div */
+    max-height: 250px;
+    object-fit: cover; /* Garante que a imagem cubra a área da div, mantendo a proporção */
 }
 
 form {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    width: 500px;
+    width: 100%;
     margin: 0 auto
+}
+
+form label {
+    margin-top: 8px;
 }
 
 label {
@@ -38,12 +59,10 @@ label {
 }
 
 p {
-    font-family: Helvetica;
     color:#888888;
-    text-align: center;
-    margin-bottom: 20px;
-    font-style: italic;
-
+    text-align: start;
+    width: 100%;
+    max-width: 650px;
 }
 
 input, select, textarea{
@@ -62,10 +81,4 @@ button {
     color: #fff;
     font-size: 1.1rem;
     cursor: pointer;
-}
-
-@media screen and (max-width: 500px) {
-    form {
-        max-width: 90%;
-    }
 }
